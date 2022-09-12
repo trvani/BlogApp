@@ -1,0 +1,41 @@
+<nav class="navbar bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Sıfır Noktası</a>
+
+
+ 
+
+    <!-- Burada toggler iconu var. -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+
+    <!-- Burada sidebar canvas olacak -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanbasNavbarLabel">
+      <div class="offcanvas-header">
+
+        <!--Açılabilir sidebar başlığı ve yanda sidebarı kapatma butonu-->
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sıfır Noktası</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <!--Menü listeleri sıralı şekilde bu container'a ekleniyor.-->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+      </div>     
+
+    </div>
+  </div>
+</nav>
