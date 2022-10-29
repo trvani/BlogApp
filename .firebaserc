@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "blogmanagerapp-2337c": {
+      "hosting": {
+        "BlogApp": [
+          "blogmanagerapp-2337c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "blogmanagerapp-2337c"
+  }
+}

@@ -4,17 +4,16 @@
 
 export const environment = {
     production: false,
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    firebase : {
-      apiKey: "AIzaSyBUDU-Z4KnT4DSeKIOieW6t_2vSALbkvTc",
-      authDomain: "blogmanagerapp-2337c.firebaseapp.com",
-      projectId: "blogmanagerapp-2337c",
-      storageBucket: "blogmanagerapp-2337c.appspot.com",
-      messagingSenderId: "448419282785",
-      appId: "1:448419282785:web:6497a0fbd3ef64c3e34f20",
-      measurementId: "G-MG1TPX2BQK"
-    }
+  firebase: {
+    projectId: 'blogmanagerapp-2337c',
+    appId: '1:448419282785:web:6497a0fbd3ef64c3e34f20',
+    storageBucket: 'blogmanagerapp-2337c.appspot.com',
+    locationId: 'europe-west6',
+    apiKey: 'AIzaSyBUDU-Z4KnT4DSeKIOieW6t_2vSALbkvTc',
+    authDomain: 'blogmanagerapp-2337c.firebaseapp.com',
+    messagingSenderId: '448419282785',
+    measurementId: 'G-MG1TPX2BQK',
+  }
 
   
 };
