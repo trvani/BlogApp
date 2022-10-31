@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import{HttpClient,HttpClientModule} from '@angular/common/http';
+import { DataTablesModule } from 'angular-datatables';
+ 
 import { environment } from '../environments/environment';
-import { FirestoreModule, FirestoreSettings, provideFirestore } from '@angular/fire/firestore';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +18,6 @@ import { RegisterComponent } from './components/register/register.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { initializeApp } from 'firebase/app';
 
 @NgModule({
   declarations: [
@@ -39,8 +37,8 @@ import { initializeApp } from 'firebase/app';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    FirestoreModule
+    DataTablesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
